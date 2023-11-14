@@ -1,0 +1,8 @@
+{
+    "service_config": {
+      "s3": {
+        "bucket_name": "airflow"
+      }
+    },
+    "host": "http://host.docker.internal:9000"
+  }
