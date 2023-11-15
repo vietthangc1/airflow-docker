@@ -49,6 +49,12 @@ also_run_this = BashOperator(
     bash_command='echo "run_id={{ run_id }} | dag_run={{ dag_run }}"',
     dag=dag,
 )
+
+get_pwd = BashOperator(
+    task_id='get_pwd',
+    bash_command='echo $PWD',
+    dag=dag,
+)
 # [END howto_operator_bash_template]
 also_run_this >> run_this_last
 
